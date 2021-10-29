@@ -17,6 +17,10 @@ arduino-cli core update-index
 # Install Arduino Nano 33 BLE core
 arduino-cli core install arduino:mbed
 
+# Install libraries:
+arduino-cli lib install ArduinoBLE
+arduino-cli lib install Arduino_HTS221
+
 # Compile all *.ino files for the Arduino Nano 33 BLE
 for f in **/*.ino ; do
     arduino-cli compile -b arduino:mbed:nano33ble $f
