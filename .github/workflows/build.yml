@@ -3,9 +3,9 @@ on: [pull_request, push]
 jobs:
   build:
     runs-on: ubuntu-latest
-  steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
 
-    - name: Build on Arduino CLI
-      run: bash ci/build-arduino.sh
+      - name: Build on Arduino CLI
+        run: bash ci/build-arduino.sh
