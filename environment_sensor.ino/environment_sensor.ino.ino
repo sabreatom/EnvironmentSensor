@@ -11,7 +11,7 @@ BLEFloatCharacteristic HumidityCharacteristic("19B10001-E8F2-537E-4F6C-D104768A1
 
 void setup() {
   Serial.begin(115200);
-  while (!Serial);
+  //while (!Serial);
 
   // begin initialization
   if (!BLE.begin()) {
