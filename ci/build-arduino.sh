@@ -15,7 +15,7 @@ arduino-cli config init
 arduino-cli core update-index
 
 # Install Arduino Nano 33 BLE core
-#arduino-cli core install arduino:mbed:nano33ble
+arduino-cli core install arduino:mbed
 
 # Compile all *.ino files for the Arduino Nano 33 BLE
 for f in **/*.ino ; do
